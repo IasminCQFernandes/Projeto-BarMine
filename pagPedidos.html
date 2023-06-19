@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGENS/beer.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Bar Mine</title>
+
+    <link rel="stylesheet" href="style-pagPedidos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="voltar">
+            <a href="pagInicial.html"><img src="IMAGENS/seta-esquerda.png" alt="voltar">VOLTAR</a>
+        </div>
+
+        <div class="idCliente">
+            <h1>NOME DO CLIENTE</h1>
+            <div class="medalha">
+                <img src="IMAGENS/medalha-de-ouro.png" alt="cliente medalha de ouro">
+                <p>CLIENTE OURO</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pedidos">
+            <div class="bebidas" onclick="retratil()">
+                <img src="IMAGENS/bebida.png" alt="bebidas">
+
+                <div class="pedidoBebida" onclick="ocultar()">
+                    <h2>BEBIDAS GELADAS</h2>
+                    <div class="text">
+                        <p>Cerveja, refrigerante e água.</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar" id="somarBud" value=0 onclick="somarBud()">
+
+                            <p class="qtd" id="quantBud">0</p>
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" id="diminuirBud" onclick="subtrBud()">
+                        </div>
+
+                        <p class="produtoBebidas">BUDWEISER LONG NECK</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar" id="somarHei" onclick="somarHei()"> 
+
+                            <p class="qtd" id="quantHei">0</p>
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" id="diminuirHei" onclick="subtrHei()">
+                        </div>
+                        
+                        <p class="produtoBebidas">HEINEKEN LONG NECK</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarCoca700()">
+                            <p class="qtd">0</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrCoca700()">
+                        </div>
+                        
+                        <p class="produtoBebidas">COCA-COLA 700ML</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarCocaLata()">
+                            <p class="qtd">0</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrCocaLata()">
+                        </div>
+                        
+                        <p class="produtoBebidas">COCA-COLA LATA</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="bebidas drinks" onclick="retratil()">
+
+                <div class="pedidoBebida drink">
+                    <h2 id="drinkH2">DRINKS</h2>
+                    <div class="text textDrink ">
+                        <p>Caipirinha, vodka e whisky.</p>
+                    </div>
+
+                    <div class="tabelaPedido tabelaDrinks  todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarCaipirinha()">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrCaipirinha()">
+                        </div>
+
+                        <p class="produtoBebidas">CAIPIRINHA SABORES</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks" >
+
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarVodka()">
+
+                            <p class="qtd">0</p>
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrVodka()">
+                        </div>
+                        
+                        <p class="produtoBebidas">VODKA DOSE</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarWhisky()">
+
+                            <p class="qtd">1</p>
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrWhisky()">
+                        </div>
+                        
+                        <p class="produtoBebidas">whisky dose</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarWhiskyEner()">
+
+                            <p class="qtd">1</p>
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrWhiskyEner()">
+                        </div>
+                        
+                        <p class="produtoBebidas">whisky com energet.</p>
+                    </div>
+                </div>
+                <img src="IMAGENS/drink.png" alt="bebidas">
+
+            </div>
+
+
+
+            <div class="bebidas porcoes" onclick="retratil()">
+                <img src="IMAGENS/porçoes.png" alt="bebidas">
+
+                <div class="pedidoBebida">
+                    <h2>PORÇÕES</h2>
+                    <div class="text">
+                        <p>Churrasco, petiscos e hamburguer.</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+
+                        <p class="produtoBebidas">ESPETINHO</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">HAMBURGUER</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">PORÇÃO MEDIA</p>
+                    </div>
+
+                    <div class="tabelaPedido todos">
+
+                        <div class="somatorio">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">PORÇÃO GRANDE</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="bebidas drinks pratos " onclick="retratil()">
+
+                <div class="pedidoBebida drink">
+                    <h2 id="drinkH2">PRATOS</h2>
+                    <div class="text textDrink">
+                        <p>Almoço e Jantar.</p>
+                    </div>
+
+                    <div class="tabelaPedido tabelaDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+
+                        <p class="produtoBebidas">Tropeiro</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">Bife à parmegiana</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">PRATO DA CASA</p>
+                    </div>
+
+                    <div class="tabelaPedido somDrinks todos">
+
+                        <div class="somatorio somatorioDrinks">
+                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <p class="qtd">1</p>
+                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                        </div>
+                        
+                        <p class="produtoBebidas">Strogonoff </p>
+                    </div>
+                </div>
+                <img src="IMAGENS/pratos.png" alt="pratos" class="posicaoImg">
+
+            </div>
+
+
+            <div class="pedidos ">
+                <div class="bebidas espaco ">
+                   
+                </div>
+    
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="fecharComanda">
+            <a href="pedidos.html">FECHAR COMANDA</a>
+        </div>
+
+        <div class="total">
+            <div class="valor">
+                <p>TOTAL:</p>
+                <p class="resultado"><span id="span">R$</span></p>
+            </div>
+            <div class="solicitarPedido">
+                <p>Solicitar pedido</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

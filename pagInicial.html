@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGENS/beer.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Bar Mine</title>
+
+    <link rel="stylesheet" href="style-pagInicial.css">
+</head>
+<body>
+    <header>
+        <div class="funcionario">
+            <img src="IMAGENS/adm.jpg" alt="imagem funcionario">
+
+            <div class="identificacao">
+                <span>Olá!</span>
+                <p>Iasmin C.</p>
+            </div>
+        
+        
+            <div class="logo">
+                <h1>MINE</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="ativos">
+            <h4>ATIVOS</h4>
+            <img src="IMAGENS/ativo.png" alt="Clientes ativos no estabelecimento">
+        </div>
+
+        <div class="clientes" onclick="realizarPedido()">
+            <div class="cliente">
+                <img src="IMAGENS/cliente1.jpg" alt="foto do cliente">
+
+                <div class="idCliente">
+                    <p class="nomeCliente">MARCOS FRANCIS</p>
+
+                    <div class="medalha">
+                        <img src="IMAGENS/medalha-de-ouro.png" alt="cliente medalha de ouro">
+                        <p>CLIENTE OURO</p>
+                    </div>
+                </div>
+            </div>
+<!-- ****************************************************** -->
+            <div class="cliente" onclick="realizarPedido()">
+                <img src="IMAGENS/cliente4.jpg">
+
+                <div class="idCliente">
+                    <p class="nomeCliente">PEDRO OLIVEIRA</p>
+                    
+                    <div class="medalha">
+                        <img src="IMAGENS/medalha-de-prata.png" alt="cliente medalha de ouro">
+                        <p>CLIENTE PRATA</p>
+                    </div>
+                </div>
+            </div>
+<!-- ****************************************************** -->
+
+            <div class="cliente" onclick="realizarPedido()">
+                <img src="IMAGENS/cliente3.jpg">
+
+                <div class="idCliente">
+                    <p class="nomeCliente">RENAN PACHECO</p>
+                    
+                    <div class="medalha">
+                        <img src="IMAGENS/qualidade.png" alt="cliente medalha de ouro">
+                        <p>CLIENTE DIAMANTE</p>
+                    </div>
+                </div>
+            </div>
+<!-- ****************************************************** -->
+
+            <div class="cliente" onclick="realizarPedido()">
+                <img src="IMAGENS/cliente2.jpg">
+
+                <div class="idCliente">
+                    <p class="nomeCliente">FERNANDA RIBEI.</p>
+                    
+                    <div class="medalha">
+                        <img src="IMAGENS/medalha-de-ouro.png" alt="cliente medalha de ouro">
+                        <p>CLIENTE OURO</p>
+                    </div>
+                </div>
+            </div>
+<!-- ****************************************************** -->
+
+            <div class="cliente" onclick="realizarPedido()">
+                <img src="IMAGENS/cliente5.jpg">
+
+                <div class="idCliente">
+                    <p class="nomeCliente">JULIA MARCELE</p>
+                    
+                    <div class="medalha">
+                        <img src="IMAGENS/medalha-de-bronze.png" alt="cliente medalha de ouro">
+                        <p>CLIENTE BRONZE</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+            <a href="pedidos.html">ADICIONAR CLIENTE</a>
+    </footer>
+
+    <script>
+        function realizarPedido(){
+            window.location.href = 'pagPedidos.html';
+        }
+    </script>
+</body>
+</html>

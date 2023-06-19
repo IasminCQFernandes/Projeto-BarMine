@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="loader">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGENS/cerveja.png" type="image/png">
+    <title>Bar Mine</title>
+
+    <style>
+        html{
+            background-image: url(projetoGrafico/telaLoad.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+           
+        }
+        @keyframes blink{
+            0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+        }
+        #img-drink{
+            width: 20%;
+            display: block;
+            margin: auto;
+
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+    
+            animation: blink 1s infinite ease;
+        }
+        #img-drink img{
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="img-drink">
+        <img src="IMAGENS/beer.png" alt="">
+    </div>
+
+<script>
+    window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'block';
+    window.location.href = 'pagInicial.html';
+    });
+
+</script>
+</body>
+</html>
