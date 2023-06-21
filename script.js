@@ -86,7 +86,19 @@ function somarBud() {
     qtd * valores +
     qtd2 * valoresHei +
     qtd3 * valoresCoca +
-    qtd4 * valoresCocaLata;
+    qtd4 * valoresCocaLata +
+    qtd5 * valoresDrinkCaipirinha +
+    qtd6 * valoresVodka +
+    qtd7 * valoresWhisky +
+    qtd8 * valoresWhiskyEner +
+    qtd9 * valoresEspetinho +
+    qtd10 * valoresHamburguer +
+    qtd11 * valoresPorcaoMedia +
+    qtd12 * valoresPorcaoG +
+    qtd13 * valoresTropeiro +
+    qtd14 * valoresParmediana +
+    qtd15 * valoresCasa +
+    qtd16 * valoresStrogonoff;
 
   document.querySelector(".resultado").innerHTML = soma.toFixed(2);
 }
@@ -935,23 +947,53 @@ function subtrStrogonoff() {
     document.querySelector(".resultado").innerHTML = soma.toFixed(2);
   }
 }
- function solicitar(){
-    document.querySelector(".pedidoRealizado").style = "display:flex";
+function solicitar() {
+  document.querySelector(".pedidoRealizado").style = "display:flex";
 
-    document.querySelector(".pedidos").style = "opacity:0.5";
+  document.querySelector(".pedidos").style = "opacity:0.5";
 
-    document.querySelector(".total").style = "display:none"
+  document.querySelector(".total").style = "display:none";
+}
 
-
- }
-
- function cancel(){
+function cancel() {
   // window.location.reload();
   document.querySelector(".pedidoRealizado").style = "display:none";
 
   document.querySelector(".pedidos").style = "opacity:1";
 
-  document.querySelector(".fecharComanda").style = "display:block"
+  document.querySelector(".fecharComanda").style = "display:block";
+}
 
-  
- }
+// FECHAR COMANDA
+function fecharComanda() {
+  document.querySelector(".comanda").style = "display:flex";
+
+  fechamentoCmd();
+}
+
+function fechamentoCmd() {
+  let soma =
+    qtd * valores +
+    qtd2 * valoresHei +
+    qtd3 * valoresCoca +
+    qtd4 * valoresCocaLata +
+    qtd5 * valoresDrinkCaipirinha +
+    qtd6 * valoresVodka +
+    qtd7 * valoresWhisky +
+    qtd8 * valoresWhiskyEner +
+    qtd9 * valoresEspetinho +
+    qtd10 * valoresHamburguer +
+    qtd11 * valoresPorcaoMedia +
+    qtd12 * valoresPorcaoG +
+    qtd13 * valoresTropeiro +
+    qtd14 * valoresParmediana +
+    qtd15 * valoresCasa +
+    qtd16 * valoresStrogonoff;
+
+  document.querySelector("#totalCmd").textContent = "R$ " + soma.toFixed(2);
+  console.log(soma);
+}
+
+function pagar() {
+  document.querySelector(".fim").style = "display:block";
+}

@@ -304,8 +304,8 @@
 
 
     <footer>
-        <div class="fecharComanda">
-            <a href="pedidos.html">FECHAR COMANDA</a>
+        <div class="fecharComanda" onclick="fecharComanda()">
+            <p>FECHAR COMANDA</p>
         </div>
 
         <div class="total">
@@ -324,6 +324,33 @@
             <p>PEDIDO FINALIZADO!</p>
             <div class="cancel" onclick="cancel()">
                 <img src="IMAGENS/cancel.png" alt="Cancelar">
+            </div>
+        </div>
+
+        <div class="comanda">
+            
+            
+
+            <div class="totalComanda">
+                <p id="total-Comanda">TOTAL: </p>
+                <p id="totalCmd">10.00</p>
+            </div>
+
+            <div class="formasPagamento">
+                <div class="dinheiro" onclick="pagar()">
+                    <img src="IMAGENS/dinheiro.png" alt="DINHEIRO">
+                </div>
+
+                <div class="cartao" onclick="pagar()">
+                    <img src="IMAGENS/cartao-de-credito.png" alt="CARTAO">
+                </div>
+
+                <div class="pix" onclick="pagar()">
+                    <img src="IMAGENS/codigo-qr.png" alt="PIX">
+                </div>
+            </div>
+            <div class="fim">
+                <p>PAGAMENTO REALIZADO!</p>
             </div>
         </div>
     </footer>
