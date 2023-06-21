@@ -1,107 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-header{
+  }
+  header {
     height: 22vh;
-}
-
-.voltar{
+  }
+  
+  .voltar {
     padding: 2%;
     margin: 2%;
-}
-.voltar img{
+  }
+  .voltar img {
     width: 5%;
-}
-.voltar a{
+  }
+  .voltar a {
     text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.5em;
     color: #000;
     padding-left: 2%;
-}
-.idCliente h1{
+  }
+  .idCliente h1 {
     font-size: 3em;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     padding-left: 3%;
     font-weight: 300;
     letter-spacing: 1px;
-}
-
-.medalha{
+  }
+  
+  .medalha {
     display: flex;
     align-items: center;
-}
-.medalha p{
+  }
+  .medalha p {
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-left: 2%;
-}
-.medalha img{
+  }
+  .medalha img {
     width: 10%;
     height: 10%;
     padding-left: 3%;
-}
-
-main{
+  }
+  
+  main {
     background-color: #fff;
     height: 63vh;
     border-radius: 20px 20px 0 0;
-
+  
     overflow: scroll;
-}
-
-.pedidos{
+  }
+  
+  .pedidos {
     width: 90%;
     margin: auto;
-}
-
-.bebidas{
-    background:#d18e65 ;
+  }
+  
+  .bebidas {
+    background: #d18e65;
     border-radius: 20px;
-    
+  
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
     margin-bottom: 3%;
     animation: entrada 1s ease-in-out;
-}
-@keyframes entrada {
-    0%{
-        transform: translateX(100%);
+  }
+  @keyframes entrada {
+    0% {
+      transform: translateX(100%);
     }
-    100%{
-        transform: translateX(0%);
+    100% {
+      transform: translateX(0%);
     }
-}
-
-
-.bebidas img{
+  }
+  
+  .bebidas img {
     width: 30%;
     height: 30%;
     padding: 2%;
     display: flex;
- 
-
-}
-
-.tabelaPedido{
-
+  }
+  
+  .tabelaPedido {
     display: flex;
     justify-content: start;
     align-items: center;
     padding-bottom: 3%;
-
-   
-}
-
-
-
-
-.somatorio{
+  }
+  
+  .somatorio {
     display: flex;
     justify-content: space-around;
     padding: 2%;
@@ -109,91 +99,89 @@ main{
     align-items: center;
     width: 30%;
     background-color: #000;
-}
-.somatorio img{
+  }
+  .somatorio img {
     width: 30%;
     height: 100%;
     padding: 1%;
-    
-}
-.qtd{
+  }
+  .qtd {
     padding: 1%;
-}
-.pedidoBebida{
+  }
+  .pedidoBebida {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
     animation: entrada 1s ease-in-out;
-}
-@keyframes entrada {
-    0%{
-        transform: translateX(100%);
+  }
+  @keyframes entrada {
+    0% {
+      transform: translateX(100%);
     }
-    100%{
-        transform: translateX(0%);
+    100% {
+      transform: translateX(0%);
     }
-}
-
-.pedidoBebida h2{
+  }
+  
+  .pedidoBebida h2 {
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.5em;
     font-weight: 300;
     letter-spacing: 1px;
-}
-.text{
+  }
+  .text {
     /* display: none; */
-    
+  
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-}
-.produtoBebidas{
-    font-family: 'Bebas Neue', sans-serif;
+  }
+  .produtoBebidas {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 1px;
     padding-left: 2%;
-}
-.pratos{
+  }
+  .pratos {
     display: flex;
     justify-content: end;
     align-items: center;
-
-}
-
-.drinks{
+  }
+  
+  .drinks {
     background-color: #e16335;
     display: flex;
     animation: entrada2 1s ease-in-out;
-}
-@keyframes entrada2 {
-    0%{
-        transform: translateX(-100%);
+  }
+  @keyframes entrada2 {
+    0% {
+      transform: translateX(-100%);
     }
-    100%{
-        transform: translateX(0%);
+    100% {
+      transform: translateX(0%);
     }
-}
-
-
-#drinkH2, .textDrink{
+  }
+  
+  #drinkH2,
+  .textDrink {
     text-align: end;
-}
-.somatorioDrinks{
+  }
+  .somatorioDrinks {
     margin-left: 2%;
-}
-.espaco{
+  }
+  .espaco {
     background-color: transparent;
     height: 10px;
-}
-
-.todos{
+  }
+  
+  .todos {
     display: none;
-}
-
-footer{
+  }
+  
+  footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,49 +191,95 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: #fff;
-    text-align: center;   
+    text-align: center;
     box-shadow: 0px -5px 32px 0px rgba(163, 163, 163, 0.5);
-}
-footer a{
+  }
+  footer a {
     text-decoration: none;
     color: #000;
     background-color: #d18e65;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.5em;
-    padding:2% 10%;
+    padding: 2% 10%;
     border-radius: 20px;
-}
-
-.fecharComanda{
+  }
+  
+  .fecharComanda {
     display: flex;
     justify-content: center;
     width: 70%;
-}
-.total{
+  }
+  .total {
     display: none;
     flex-direction: column;
-
+  
     background-color: #e16335;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     width: 70%;
-
+  
     border-radius: 10px;
-}
-.valor{
+  }
+  .valor {
     width: 100%;
     display: flex;
     justify-content: space-around;
     font-size: 2em;
     font-weight: 300;
-    border-bottom:1px solid #fff ;
-}
-#span{
+    border-bottom: 1px solid #fff;
+  }
+  #span {
     font-size: 0.5em;
-}
-.solicitarPedido{
+  }
+  .solicitarPedido {
     padding: 2%;
     font-size: 1.2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+  .pedidoRealizado {
+    display: none;
+    justify-content: center;
+    align-items: center;
 
-}
+    max-width: 350px; 
+    height: 100px;
+    
+    position: absolute;
+    top: -250%;
+  
+    
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0px 3px 31px 0px rgba(0,0,0,0.75);
+
+
+    background-color: #e16335;
+    animation: subir 0.5s linear;
+  }
+
+  @keyframes subir {
+    0%{
+      transform: translateY(-4%);
+    }
+    100%{
+      transform: translateY(0%) ;
+    }
+  }
+  .pedidoRealizado p{
+    font-size: 2em;
+
+    color: #fff;
+  }
+  .cancel{
+    height: 80%;
+    display: flex;
+    align-items: start;
+ 
+  }
+  .pedidoRealizado img{
+    width: 70%;
+    display: block;
+  }

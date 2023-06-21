@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Bar Mine</title>
 
+    
+
     <link rel="stylesheet" href="style-pagPedidos.css">
     <script src="script.js" defer></script>
 </head>
@@ -24,11 +26,11 @@
         </div>
 
         <div class="idCliente">
-            <h1>NOME DO CLIENTE</h1>
-            <div class="medalha">
+            <h1 id="nomeDoCliente">NOME DO CLIENTE</h1>
+            <!-- <div class="medalha">
                 <img src="IMAGENS/medalha-de-ouro.png" alt="cliente medalha de ouro">
                 <p>CLIENTE OURO</p>
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -37,7 +39,7 @@
             <div class="bebidas" onclick="retratil()">
                 <img src="IMAGENS/bebida.png" alt="bebidas">
 
-                <div class="pedidoBebida" onclick="ocultar()">
+                <div class="pedidoBebida">
                     <h2>BEBIDAS GELADAS</h2>
                     <div class="text">
                         <p>Cerveja, refrigerante e água.</p>
@@ -174,9 +176,11 @@
                     <div class="tabelaPedido todos">
 
                         <div class="somatorio">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarEspetinho()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrEspetinho()">
                         </div>
 
                         <p class="produtoBebidas">ESPETINHO</p>
@@ -185,9 +189,11 @@
                     <div class="tabelaPedido todos">
 
                         <div class="somatorio">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarHamburguer()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrHamburguer()">
                         </div>
                         
                         <p class="produtoBebidas">HAMBURGUER</p>
@@ -196,9 +202,11 @@
                     <div class="tabelaPedido todos">
 
                         <div class="somatorio">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarPorcaoMedia()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrPorcaoMedia()">
                         </div>
                         
                         <p class="produtoBebidas">PORÇÃO MEDIA</p>
@@ -207,9 +215,11 @@
                     <div class="tabelaPedido todos">
 
                         <div class="somatorio">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarPorcaoG()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrPorcaoG()">
                         </div>
                         
                         <p class="produtoBebidas">PORÇÃO GRANDE</p>
@@ -230,9 +240,10 @@
                     <div class="tabelaPedido tabelaDrinks todos">
 
                         <div class="somatorio somatorioDrinks">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarTropeiro()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrTropeiro()">
                         </div>
 
                         <p class="produtoBebidas">Tropeiro</p>
@@ -241,9 +252,11 @@
                     <div class="tabelaPedido somDrinks todos">
 
                         <div class="somatorio somatorioDrinks">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarParmediana()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrParmediana()">
                         </div>
                         
                         <p class="produtoBebidas">Bife à parmegiana</p>
@@ -252,9 +265,11 @@
                     <div class="tabelaPedido somDrinks todos">
 
                         <div class="somatorio somatorioDrinks">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar" onclick="somarCasa()">
+                            
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir" onclick="subtrCasa()">
                         </div>
                         
                         <p class="produtoBebidas">PRATO DA CASA</p>
@@ -263,9 +278,11 @@
                     <div class="tabelaPedido somDrinks todos">
 
                         <div class="somatorio somatorioDrinks">
-                            <img src="IMAGENS/add.png" alt="adicionar">
+                            <img src="IMAGENS/add.png" alt="adicionar"  onclick="somarStrogonoff()">
+
                             <p class="qtd">1</p>
-                            <img src="IMAGENS/subtração.png" alt="diminuir">
+
+                            <img src="IMAGENS/subtração.png" alt="diminuir"  onclick="subtrStrogonoff()">
                         </div>
                         
                         <p class="produtoBebidas">Strogonoff </p>
@@ -282,6 +299,7 @@
                 </div>
     
         </div>
+        
     </main>
 
 
@@ -295,8 +313,17 @@
                 <p>TOTAL:</p>
                 <p class="resultado"><span id="span">R$</span></p>
             </div>
-            <div class="solicitarPedido">
+            <div class="solicitarPedido" onclick="solicitar()">
                 <p>Solicitar pedido</p>
+            </div>
+
+            
+        </div>
+
+        <div class="pedidoRealizado">
+            <p>PEDIDO FINALIZADO!</p>
+            <div class="cancel" onclick="cancel()">
+                <img src="IMAGENS/cancel.png" alt="Cancelar">
             </div>
         </div>
     </footer>
